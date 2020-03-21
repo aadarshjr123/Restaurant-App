@@ -16,6 +16,7 @@ const SearchBar = ({term , onTermChange, onTermSubmit} ) => {
             value={term}
             onChangeText={onTermChange}
             onEndEditing={onTermSubmit}
+            blurOnSubmit={true}
             />
         </View>
     );
@@ -23,15 +24,17 @@ const SearchBar = ({term , onTermChange, onTermSubmit} ) => {
 
 const Styles = StyleSheet.create({
     background:{
-        backgroundColor:'#F0EEEE',
+        backgroundColor:'#d1f0d9',
         height:50,
         borderRadius: 5,
         marginHorizontal: 15,
         marginTop:10,
         flexDirection:"row",
+        borderWidth:2,
+        borderColor:'#fff'
         
     },
-    inpytStyle:{
+    inputStyle:{
         flex:1,
         fontSize:18
     },
